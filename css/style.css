@@ -10,4 +10,27 @@ html {
 
 .body {
     font-family: 'Montserrat', sans-serif;
+    background-color: #eeeeee;
+}
+
+.body__container {
+    background-color: white;
+}
+
+.form__fieldset {
+    background-color: #ffffff;
+    padding: 30px;
+    border: 1px solid #ccc;
+}
+
+.form__field {
+    line-height: 1.6;
+}
+
+.form__button {
+    background-color: #008080;
+    border-color: #008080;
+    color: white;
+    font-weight: 300;
+    line-height: 1.6;
 }
