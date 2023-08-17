@@ -46,6 +46,15 @@
         });
     };
 
+    const focusNewTask = () => {
+        const newTaskButton = document.querySelector(".js-newTaskButton");
+        const newTask = document.querySelector(".js-newTask");
+
+        newTaskButton.addEventListener("click", () => {
+            newTask.focus();
+        });
+    };
+
     const render = () => {
         let htmlString = "";
         for (const task of tasks) {
@@ -63,6 +72,7 @@
         document.querySelector(".js-tasks").innerHTML = htmlString;
 
         bindEvents();
+        focusNewTask();
     };
 
     const onFormSubmit = (event) => {
@@ -82,6 +92,7 @@
 
         const form = document.querySelector(".js-form");
         form.addEventListener("submit", onFormSubmit);
+
     };
 
     init();
