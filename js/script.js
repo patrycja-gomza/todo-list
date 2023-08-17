@@ -14,8 +14,8 @@
         tasks.push({
             content: newTaskContent,
         });
-
         render();
+        document.querySelector(".js-form").reset();
     };
 
     const removeTask = (taskIndex) => {
@@ -27,6 +27,7 @@
         tasks[taskIndex].done = !tasks[taskIndex].done;
         render();
     };
+
 
     const bindEvents = () => {
         const removeButtons = document.querySelectorAll(".js-remove");
@@ -72,7 +73,6 @@
         document.querySelector(".js-tasks").innerHTML = htmlString;
 
         bindEvents();
-        focusNewTask();
     };
 
     const onFormSubmit = (event) => {
@@ -89,10 +89,10 @@
 
     const init = () => {
         render();
+        focusNewTask();
 
         const form = document.querySelector(".js-form");
         form.addEventListener("submit", onFormSubmit);
-
     };
 
     init();
