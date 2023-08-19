@@ -28,7 +28,6 @@
         render();
     };
 
-
     const bindEvents = () => {
         const removeButtons = document.querySelectorAll(".js-remove");
 
@@ -56,6 +55,13 @@
         });
     };
 
+    const onDoneButton = () => {
+        const buttonDone = document.querySelector(".js-done");
+        buttonDone.addEventListener("click", () => {
+            buttonDone.classList.toggle(".container__item container__item--buttonDoneOn");
+        });
+    };
+
     const render = () => {
         let htmlString = "";
         for (const task of tasks) {
@@ -63,8 +69,8 @@
                 <li class="container__item"
                 ${task.done ? " style=\"text-decoration: line-through\"" : ""}
                 >
-                <button class="container__item--buttonDone js-done"> zrobione? </button>
-                <button class="container__item--buttonRemove js-remove"> usuń </button>
+                <button class="container__item container__item--buttonDone js-done"> </button>
+                <button class="container__item container__item--buttonRemove js-remove"> &#128465 </button>
                 ${task.content}
                 </li>
             `;
@@ -90,9 +96,11 @@
     const init = () => {
         render();
         focusNewTask();
+        onDoneButton();
 
         const form = document.querySelector(".js-form");
         form.addEventListener("submit", onFormSubmit);
+
     };
 
     init();

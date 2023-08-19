@@ -53,25 +53,43 @@ html {
 }
 
 .container__list {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-auto-rows: repeat(auto-fill, minmax(50px, 1fr));
+    gap: 10px;
 }
 
 .container__item {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(50px, 50px, 1fr));
+    justify-content: space-between;
+    align-items: center;
+    grid-template-areas: "left middle right";
     list-style: none;
     padding: 10px;
     border-bottom: 1px solid lightgrey;
     margin: 10px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    grid-template-rows: repeat(auto-fill, minmax (100px, 1fr));
-    gap: 20px;
-    justify-content: space-between;
-    align-items: center;
-    grid-template-areas: "left middle right"
 }
 
 .container__item--buttonRemove {
     grid-area: right;
     justify-self: end;
+    height: 40px;
+    width: 30px;
+    border: 1px solid red;
+    background-color: red;
+    color: white;
+}
+
+.container__item--buttonDone {
+    grid-area: left;
+    height: 40px;
+    width: 30px;
+    background-color: green;
+    border: 1px solid green;
+}
+
+.container__item--buttonDoneOn {
+    background-color: red;
+    color: white;
+    background-image: &#10004;
 }
