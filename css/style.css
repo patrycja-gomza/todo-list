@@ -73,23 +73,20 @@ html {
 .container__item--buttonRemove {
     grid-area: right;
     justify-self: end;
-    height: 40px;
+    height: 30px;
     width: 30px;
     border: 1px solid red;
     background-color: red;
     color: white;
+    align-content: center;
 }
 
 .container__item--buttonDone {
     grid-area: left;
-    height: 40px;
+    height: 30px;
     width: 30px;
     background-color: green;
     border: 1px solid green;
     color: white;
-}
-
-.container__item--buttonDoneOn {
-    background-color: red;
-    color: white;
+    align-content: center;
 }
