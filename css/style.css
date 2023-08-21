@@ -86,10 +86,10 @@ html {
     width: 30px;
     background-color: green;
     border: 1px solid green;
+    color: white;
 }
 
 .container__item--buttonDoneOn {
     background-color: red;
     color: white;
-    background-image: &#10004;
 }

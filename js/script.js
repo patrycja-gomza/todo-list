@@ -55,13 +55,6 @@
         });
     };
 
-    const onDoneButton = () => {
-        const buttonDone = document.querySelector(".js-done");
-        buttonDone.addEventListener("click", () => {
-            buttonDone.classList.toggle(".container__item container__item--buttonDoneOn");
-        });
-    };
-
     const render = () => {
         let htmlString = "";
         for (const task of tasks) {
@@ -69,7 +62,7 @@
                 <li class="container__item"
                 ${task.done ? " style=\"text-decoration: line-through\"" : ""}
                 >
-                <button class="container__item container__item--buttonDone js-done"> </button>
+                <button class="container__item container__item--buttonDone js-done"> ${task.done ? " &#10004 " : ""} </button>
                 <button class="container__item container__item--buttonRemove js-remove"> &#128465 </button>
                 ${task.content}
                 </li>
@@ -96,7 +89,6 @@
     const init = () => {
         render();
         focusNewTask();
-        onDoneButton();
 
         const form = document.querySelector(".js-form");
         form.addEventListener("submit", onFormSubmit);
