@@ -60,8 +60,8 @@
         for (const task of tasks) {
             htmlString += `
                 <li class="container__item">
-                <button class="container__item container__item--buttonDone js-done"> ${task.done ? " &#10004 " : ""} </button>
-                <button class="container__item container__item--buttonRemove js-remove"> &#128465 </button>
+                <button class="container__item container__button js-done"> ${task.done ? " &#10004 " : ""} </button>
+                <button class="container__item container__button container__button--remove js-remove"> &#128465 </button>
                 <span class= ${task.done ? "container__item--done" : ""}>
                 ${task.content}
                 </span>

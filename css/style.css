@@ -74,23 +74,19 @@ html {
     text-decoration: line-through;
 }
 
-.container__item--buttonRemove {
+.container__button--remove.container__button--remove {
     grid-area: right;
     justify-self: end;
-    height: 30px;
-    width: 30px;
     border: 1px solid red;
     background-color: red;
-    color: white;
-    align-content: center;
+    font-weight: bold;
 }
 
-.container__item--buttonDone {
-    grid-area: left;
+.container__button {
     height: 30px;
     width: 30px;
+    color: white;
     background-color: green;
     border: 1px solid green;
-    color: white;
     align-content: center;
 }
