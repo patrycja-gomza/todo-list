@@ -70,6 +70,10 @@ html {
     margin: 10px;
 }
 
+.container__item--done {
+    text-decoration: line-through;
+}
+
 .container__item--buttonRemove {
     grid-area: right;
     justify-self: end;
