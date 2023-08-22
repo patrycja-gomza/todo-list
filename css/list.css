@@ -1,0 +1,35 @@
+.list {
+    list-style: none;
+    padding: 20px;
+}
+
+.list__item {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-gap: 20px;
+    align-items: center;
+    grid-template-areas: "left middle right";
+    border-bottom: 1px solid lightgrey;
+    padding: 10px;
+}
+
+.list__item--done {
+    text-decoration: line-through;
+}
+
+.list__button--remove.list__button--remove {
+    grid-area: right;
+    justify-self: end;
+    border: 1px solid red;
+    background-color: red;
+    font-weight: bold;
+}
+
+.list__button {
+    height: 30px;
+    width: 30px;
+    color: white;
+    background-color: green;
+    border: 1px solid green;
+    align-content: center;
+}

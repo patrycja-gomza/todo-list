@@ -1,0 +1,22 @@
+.form__fieldset {
+    display: flex;
+    flex-wrap: wrap;
+    border: none;
+}
+
+.form__field {
+    flex-grow: 1;
+    border: 1px solid lightgray;
+    margin: 10px;
+    padding: 10px;
+}
+
+.form__button {
+    flex-basis: 200px;
+    background-color: teal;
+    border: 1px solid teal;
+    color: white;
+    font-weight: 300;
+    margin: 10px;
+    padding: 10px;
+}
