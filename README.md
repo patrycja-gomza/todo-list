@@ -1,5 +1,5 @@
 # todo-list by Patrycja Gomza
-
+![gif](https://github.com/patrycja-gomza/todo-list/blob/main/gif/Animation%20todo-list.gif?raw=true)
 
 ## Demo
 https://patrycja-gomza.github.io/todo-list/
