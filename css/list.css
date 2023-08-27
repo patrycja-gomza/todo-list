@@ -1,6 +1,7 @@
 .list {
     list-style: none;
-    padding: 20px;
+    padding: 0;
+    margin: 0;
 }
 
 .list__item {
@@ -8,34 +9,30 @@
     grid-template-columns: auto 1fr auto;
     grid-gap: 20px;
     align-items: center;
-    grid-template-areas: "left middle right";
     border-bottom: 1px solid lightgrey;
     padding: 10px;
 }
 
-.list__item--done {
+.list__content--done {
     text-decoration: line-through;
-}
-
-.list__button--remove.list__button--remove {
-    grid-area: right;
-    justify-self: end;
-    border: 1px solid red;
-    background-color: red;
-    font-weight: bold;
 }
 
 .list__button {
     height: 30px;
     width: 30px;
     color: white;
-    background-color: green;
-    border: 1px solid green;
-    align-content: center;
+    border: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-@media (max-width: 768px) {
-    .form__button {
-        flex: 1 1 auto;
-    }
+.list__button--toggleDone {
+    background-color: green;
+}
+
+.list__button--remove {
+    background-color: red;
+    font-weight: bold;
 }

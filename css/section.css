@@ -1,0 +1,14 @@
+.section {
+    background-color: white;
+    box-shadow: 0 0 5px #ddd;
+}
+
+.section__header {
+    border-bottom: 1px solid lightgrey;
+    padding: 20px;
+    margin-bottom: 0;
+}
+
+.section__body {
+    padding: 20px;
+}

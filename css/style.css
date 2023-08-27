@@ -8,22 +8,8 @@ html {
     box-sizing: inherit;
 }
 
-.body {
-    max-width: 1000px;
-    width: 100%;
-    margin: 0 auto;
-    padding: 20px;
+body {
     font-family: 'Montserrat', sans-serif;
     background-color: #d3d3d370;
     word-break: break-word;
-}
-
-.body__container {
-    background-color: white;
-}
-
-.body__subtitel {
-    border-bottom: 1px solid lightgrey;
-    padding: 20px;
-    margin-bottom: 0;
 }
