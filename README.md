@@ -13,7 +13,8 @@ The subject of this page is a task list. In the center of the page is an applica
 ## Technologies
 Project is created with:
 - BEM
-- Flex
+- Flexbox
+- CSS Grid
 - JavaScript ES6+ Features
 ## Status
 The site is dynamically growing, along with the new front-end programming skills I'm learning.
