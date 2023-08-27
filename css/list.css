@@ -29,10 +29,26 @@
 }
 
 .list__button--toggleDone {
-    background-color: green;
+    background-color: hsl(120, 100%, 25%);
+}
+
+.list__button--toggleDone:hover {
+    background-color: hsl(120, 100%, 30%);
+}
+
+.list__button--toggleDone:active {
+    background-color: hsl(120, 100%, 35%);
 }
 
 .list__button--remove {
-    background-color: red;
+    background-color: hsl(0, 100%, 50%);
     font-weight: bold;
+}
+
+.list__button--remove:hover {
+    background-color: hsl(0, 100%, 60%);
+}
+
+.list__button--remove:active {
+    background-color: hsl(0, 100%, 70%);
 }
