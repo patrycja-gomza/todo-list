@@ -1,14 +1,5 @@
 {
-    const tasks = [
-        {
-            content: "zrobić pranie",
-            done: false,
-        },
-        {
-            content: "wypić kawę",
-            done: true,
-        }
-    ];
+    let tasks = [];
 
     const addNewTask = (newTaskContent) => {
         tasks = [
@@ -88,13 +79,48 @@
         document.querySelector(".js-tasks").innerHTML = htmlString;
     };
 
-    const renderButtons = () => { };
+    const allTasksDone = () => {
+        tasks = tasks.map((task) => ({
+            ...task,
+            done: true,
+        }));
+        render();
+    };
+
+    const bindButtonsEvents = () => {
+        const toggleAllDoneButton = document.querySelector(".js-allDone");
+
+        if (toggleAllDoneButton) {
+            toggleAllDoneButton.addEventListener("click", allTasksDone);
+        };
+
+    };
+
+    const renderButtons = () => {
+        const containerWithButtons = document.querySelector(".js-buttons");
+        const areAllTasksDone = tasks.every((task) => task.done);
+
+        let htmlButtons = "";
+        if (tasks.length === 0) {
+            htmlButtons = "";
+        }
+        else {
+            htmlButtons = ` 
+            <button class="js-allDone"
+            ${areAllTasksDone ? "disabled" : ""}> Ukończ wszystkie
+            </button>
+            `;
+        };
+
+        containerWithButtons.innerHTML = htmlButtons;
+    };
 
     const render = () => {
         renderTasks();
         renderButtons();
 
         bindEvents();
+        bindButtonsEvents();
     };
 
     const onFormSubmit = (event) => {
