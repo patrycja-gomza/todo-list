@@ -119,12 +119,12 @@
         }
         else {
             htmlButtons = ` 
-            <button class="js-allDone"
+            <button class="section__buttons--item js-allDone"
             ${areAllTasksDone ? "disabled" : ""}> 
               Ukończ wszystkie
             </button>
 
-            <button class="js-hideDone">
+            <button class="section__buttons--item js-hideDone">
               ${hideDoneTasks ? "Pokaż ukończone" : "Ukryj ukończone"}
             </button>
             `;

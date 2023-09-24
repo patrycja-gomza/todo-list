@@ -7,8 +7,49 @@
     border-bottom: 1px solid lightgrey;
     padding: 20px;
     margin-bottom: 0;
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+
+@media (max-width: 768px) {
+    .section__header {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+    }
 }
 
 .section__body {
     padding: 20px;
+}
+
+.section__buttons {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: end;
+    align-items: center;
+    font-size: medium;
+}
+
+@media (max-width: 768px) {
+    .section__buttons {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+    }
+}
+
+.section__buttons--item {
+    color: hsl(180, 100%, 25%);
+    background-color: white;
+    border: none;
+    padding-left: 30px;
+}
+
+.section__buttons--item:hover {
+    color: hsl(180, 100%, 30%);
+}
+
+.section__buttons--item:active {
+    color: hsl(180, 100%, 35%);
 }
