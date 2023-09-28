@@ -54,3 +54,11 @@
 .section__buttons--item:active {
     color: hsl(180, 100%, 35%);
 }
+
+.section__buttons--item:disabled {
+    color: hsl(0, 0%, 80%);;
+}
+
+.section__buttons--item:disabled:hover {
+    color: hsl(0, 0%, 80%);;
+}
