@@ -44,6 +44,7 @@
     background-color: white;
     border: none;
     padding-left: 30px;
+    transition: 1s;
 }
 
 .section__buttons--item:hover {
