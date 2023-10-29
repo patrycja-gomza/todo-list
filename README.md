@@ -12,10 +12,16 @@ The subject of this page is a task list. In the center of the page is an applica
 - removing the task from the task list. 
 ## Technologies
 Project is created with:
-- BEM
+- HTML / CSS / JavaScript
+- Block-Element-Modifier (BEM) convention
+- Normalize.css
 - Flexbox
 - CSS Grid
+- Media Queries
 - JavaScript ES6+ Features
+- Event Listeners
+- Immutability (approach for managing state)
+
 ## Status
 The site is dynamically growing, along with the new front-end programming skills I'm learning.
 ## Inspiration
